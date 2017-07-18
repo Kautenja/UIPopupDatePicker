@@ -82,8 +82,8 @@ public class UIPopupDatePicker: UIViewController {
     
     /// Handle a press to the done button
     @IBAction func donePressed() {
-        handler?(date)
         popup.dismiss(animated: true, completion: nil)
+        handler?(date)
     }
     
     /// Display a new date picker on top of an existing view controller
