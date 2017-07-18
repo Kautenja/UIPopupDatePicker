@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		092DC5F91F1DFC68000BAB77 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092DC5F71F1DFC38000BAB77 /* FSCalendar.framework */; };
+		092DC5FA1F1DFC68000BAB77 /* PopupDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092DC5F81F1DFC3B000BAB77 /* PopupDialog.framework */; };
+		09A010DC1F1DEF58005439C1 /* UIPopupDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A010DB1F1DEF57005439C1 /* UIPopupDatePicker.swift */; };
+		09A010E21F1DEF81005439C1 /* UIPopupDatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A010E11F1DEF81005439C1 /* UIPopupDatePicker.storyboard */; };
+		09B979A71F1DDE9D00A3A885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979A61F1DDE9D00A3A885 /* AppDelegate.swift */; };
+		09B979A91F1DDE9D00A3A885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979A81F1DDE9D00A3A885 /* ViewController.swift */; };
+		09B979AC1F1DDE9D00A3A885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B979AA1F1DDE9D00A3A885 /* Main.storyboard */; };
+		09B979AE1F1DDE9D00A3A885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09B979AD1F1DDE9D00A3A885 /* Assets.xcassets */; };
+		09B979B11F1DDE9D00A3A885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B979AF1F1DDE9D00A3A885 /* LaunchScreen.storyboard */; };
+		09B979FB1F1DDF3700A3A885 /* UIPopupDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B979F91F1DDF3700A3A885 /* UIPopupDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09B979FE1F1DDF3700A3A885 /* UIPopupDatePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B979F71F1DDF3700A3A885 /* UIPopupDatePicker.framework */; };
+		09B979FF1F1DDF3700A3A885 /* UIPopupDatePicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09B979F71F1DDF3700A3A885 /* UIPopupDatePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09B97A251F1DE22900A3A885 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B97A241F1DE22500A3A885 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09B979FC1F1DDF3700A3A885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09B9799B1F1DDE9D00A3A885 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09B979F61F1DDF3700A3A885;
+			remoteInfo = UIPopupDatePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09B97A031F1DDF3700A3A885 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09B979FF1F1DDF3700A3A885 /* UIPopupDatePicker.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		092DC5F71F1DFC38000BAB77 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = "<group>"; };
+		092DC5F81F1DFC3B000BAB77 /* PopupDialog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PopupDialog.framework; path = Carthage/Build/iOS/PopupDialog.framework; sourceTree = "<group>"; };
+		09A010DB1F1DEF57005439C1 /* UIPopupDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIPopupDatePicker.swift; path = "../../../Documents/programming/ios-frameworks/Pods/BDatePicker/BDatePicker/Classes/UIPopupDatePicker.swift"; sourceTree = "<group>"; };
+		09A010E11F1DEF81005439C1 /* UIPopupDatePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UIPopupDatePicker.storyboard; path = "../../../Documents/programming/ios-frameworks/Pods/BDatePicker/BDatePicker/Assets/UIPopupDatePicker.storyboard"; sourceTree = "<group>"; };
+		09B979A31F1DDE9D00A3A885 /* PopupDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B979A61F1DDE9D00A3A885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09B979A81F1DDE9D00A3A885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09B979AB1F1DDE9D00A3A885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09B979AD1F1DDE9D00A3A885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09B979B01F1DDE9D00A3A885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09B979B21F1DDE9D00A3A885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09B979BB1F1DDE9D00A3A885 /* PopupDatePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDatePickerUITests.swift; sourceTree = "<group>"; };
+		09B979BD1F1DDE9D00A3A885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09B979F71F1DDF3700A3A885 /* UIPopupDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIPopupDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B979F91F1DDF3700A3A885 /* UIPopupDatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIPopupDatePicker.h; sourceTree = "<group>"; };
+		09B979FA1F1DDF3700A3A885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09B97A241F1DE22500A3A885 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09B979A01F1DDE9D00A3A885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B979FE1F1DDF3700A3A885 /* UIPopupDatePicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B979F31F1DDF3700A3A885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B97A251F1DE22900A3A885 /* UIKit.framework in Frameworks */,
+				092DC5F91F1DFC68000BAB77 /* FSCalendar.framework in Frameworks */,
+				092DC5FA1F1DFC68000BAB77 /* PopupDialog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09B9799A1F1DDE9D00A3A885 = {
+			isa = PBXGroup;
+			children = (
+				09B979A51F1DDE9D00A3A885 /* PopupDatePicker */,
+				09B979BA1F1DDE9D00A3A885 /* PopupDatePickerUITests */,
+				09B979F81F1DDF3700A3A885 /* UIPopupDatePicker */,
+				09B979A41F1DDE9D00A3A885 /* Products */,
+				09B97A211F1DE20A00A3A885 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09B979A41F1DDE9D00A3A885 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09B979A31F1DDE9D00A3A885 /* PopupDatePicker.app */,
+				09B979F71F1DDF3700A3A885 /* UIPopupDatePicker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09B979A51F1DDE9D00A3A885 /* PopupDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				09B979A61F1DDE9D00A3A885 /* AppDelegate.swift */,
+				09B979A81F1DDE9D00A3A885 /* ViewController.swift */,
+				09B979AA1F1DDE9D00A3A885 /* Main.storyboard */,
+				09B979AD1F1DDE9D00A3A885 /* Assets.xcassets */,
+				09B979AF1F1DDE9D00A3A885 /* LaunchScreen.storyboard */,
+				09B979B21F1DDE9D00A3A885 /* Info.plist */,
+			);
+			path = PopupDatePicker;
+			sourceTree = "<group>";
+		};
+		09B979BA1F1DDE9D00A3A885 /* PopupDatePickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09B979BB1F1DDE9D00A3A885 /* PopupDatePickerUITests.swift */,
+				09B979BD1F1DDE9D00A3A885 /* Info.plist */,
+			);
+			path = PopupDatePickerUITests;
+			sourceTree = "<group>";
+		};
+		09B979F81F1DDF3700A3A885 /* UIPopupDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				09A010E11F1DEF81005439C1 /* UIPopupDatePicker.storyboard */,
+				09A010DB1F1DEF57005439C1 /* UIPopupDatePicker.swift */,
+				09B979F91F1DDF3700A3A885 /* UIPopupDatePicker.h */,
+				09B979FA1F1DDF3700A3A885 /* Info.plist */,
+			);
+			path = UIPopupDatePicker;
+			sourceTree = "<group>";
+		};
+		09B97A211F1DE20A00A3A885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				092DC5F81F1DFC3B000BAB77 /* PopupDialog.framework */,
+				092DC5F71F1DFC38000BAB77 /* FSCalendar.framework */,
+				09B97A241F1DE22500A3A885 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09B979F41F1DDF3700A3A885 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B979FB1F1DDF3700A3A885 /* UIPopupDatePicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		09B979A21F1DDE9D00A3A885 /* PopupDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B979C01F1DDE9D00A3A885 /* Build configuration list for PBXNativeTarget "PopupDatePicker" */;
+			buildPhases = (
+				09B9799F1F1DDE9D00A3A885 /* Sources */,
+				09B979A01F1DDE9D00A3A885 /* Frameworks */,
+				09B979A11F1DDE9D00A3A885 /* Resources */,
+				09B97A031F1DDF3700A3A885 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09B979FD1F1DDF3700A3A885 /* PBXTargetDependency */,
+			);
+			name = PopupDatePicker;
+			productName = PopupDatePicker;
+			productReference = 09B979A31F1DDE9D00A3A885 /* PopupDatePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09B979F61F1DDF3700A3A885 /* UIPopupDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B97A021F1DDF3700A3A885 /* Build configuration list for PBXNativeTarget "UIPopupDatePicker" */;
+			buildPhases = (
+				09B979F21F1DDF3700A3A885 /* Sources */,
+				09B979F31F1DDF3700A3A885 /* Frameworks */,
+				09B979F41F1DDF3700A3A885 /* Headers */,
+				09B979F51F1DDF3700A3A885 /* Resources */,
+				09B97A261F1DE30F00A3A885 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIPopupDatePicker;
+			productName = UIPopupDatePicker;
+			productReference = 09B979F71F1DDF3700A3A885 /* UIPopupDatePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09B9799B1F1DDE9D00A3A885 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "CK Software";
+				TargetAttributes = {
+					09B979A21F1DDE9D00A3A885 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					09B979F61F1DDF3700A3A885 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = 09B9799E1F1DDE9D00A3A885 /* Build configuration list for PBXProject "PopupDatePicker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09B9799A1F1DDE9D00A3A885;
+			productRefGroup = 09B979A41F1DDE9D00A3A885 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09B979A21F1DDE9D00A3A885 /* PopupDatePicker */,
+				09B979F61F1DDF3700A3A885 /* UIPopupDatePicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09B979A11F1DDE9D00A3A885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B979B11F1DDE9D00A3A885 /* LaunchScreen.storyboard in Resources */,
+				09B979AE1F1DDE9D00A3A885 /* Assets.xcassets in Resources */,
+				09B979AC1F1DDE9D00A3A885 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B979F51F1DDF3700A3A885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A010E21F1DEF81005439C1 /* UIPopupDatePicker.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09B97A261F1DE30F00A3A885 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PopupDialog.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FSCalendar.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09B9799F1F1DDE9D00A3A885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B979A91F1DDE9D00A3A885 /* ViewController.swift in Sources */,
+				09B979A71F1DDE9D00A3A885 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B979F21F1DDF3700A3A885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A010DC1F1DEF58005439C1 /* UIPopupDatePicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09B979FD1F1DDF3700A3A885 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09B979F61F1DDF3700A3A885 /* UIPopupDatePicker */;
+			targetProxy = 09B979FC1F1DDF3700A3A885 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09B979AA1F1DDE9D00A3A885 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09B979AB1F1DDE9D00A3A885 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09B979AF1F1DDE9D00A3A885 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09B979B01F1DDE9D00A3A885 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09B979BE1F1DDE9D00A3A885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09B979BF1F1DDE9D00A3A885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09B979C11F1DDE9D00A3A885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PopupDatePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cksoftware.popupdatepicker.PopupDatePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09B979C21F1DDE9D00A3A885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PopupDatePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cksoftware.popupdatepicker.PopupDatePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		09B97A001F1DDF3700A3A885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UIPopupDatePicker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cksoftware.popupcolorpicker.UIPopupDatePicker;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		09B97A011F1DDF3700A3A885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = UIPopupDatePicker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cksoftware.popupcolorpicker.UIPopupDatePicker;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09B9799E1F1DDE9D00A3A885 /* Build configuration list for PBXProject "PopupDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B979BE1F1DDE9D00A3A885 /* Debug */,
+				09B979BF1F1DDE9D00A3A885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09B979C01F1DDE9D00A3A885 /* Build configuration list for PBXNativeTarget "PopupDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B979C11F1DDE9D00A3A885 /* Debug */,
+				09B979C21F1DDE9D00A3A885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09B97A021F1DDF3700A3A885 /* Build configuration list for PBXNativeTarget "UIPopupDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B97A001F1DDF3700A3A885 /* Debug */,
+				09B97A011F1DDF3700A3A885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09B9799B1F1DDE9D00A3A885 /* Project object */;
+}
