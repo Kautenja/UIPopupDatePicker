@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o5u-SA-X30">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Date Picker-->
+        <!--Popup Date Picker-->
         <scene sceneID="RvR-R1-GmF">
             <objects>
-                <viewController storyboardIdentifier="BDatePicker" id="o5u-SA-X30" customClass="BDatePicker" customModule="BDatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BDatePicker" id="o5u-SA-X30" customClass="UIPopupDatePicker" customModule="UIPopupDatePicker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Ap-b6-JCg"/>
                         <viewControllerLayoutGuide type="bottom" id="TQe-iu-4rX"/>
@@ -30,14 +30,18 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNf-Dm-lO3">
                                                 <rect key="frame" x="10" y="5" width="36" height="30"/>
-                                                <state key="normal" title="Clear"/>
+                                                <state key="normal" title="Clear">
+                                                    <color key="titleColor" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="clearPressed" destination="o5u-SA-X30" eventType="touchUpInside" id="R3m-JM-qbm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNc-7e-weL">
                                                 <rect key="frame" x="323" y="5" width="42" height="30"/>
-                                                <state key="normal" title="Today"/>
+                                                <state key="normal" title="Today">
+                                                    <color key="titleColor" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="todayPressed" destination="o5u-SA-X30" eventType="touchUpInside" id="W75-qy-5gj"/>
                                                 </connections>
@@ -96,14 +100,18 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AG-HR-ta5">
                                                 <rect key="frame" x="10" y="10" width="168" height="30"/>
-                                                <state key="normal" title="Cancel"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="cancelPressed" destination="o5u-SA-X30" eventType="touchUpInside" id="p2L-se-nni"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7S-aw-nQ0">
                                                 <rect key="frame" x="198" y="10" width="167" height="30"/>
-                                                <state key="normal" title="Done"/>
+                                                <state key="normal" title="Done">
+                                                    <color key="titleColor" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="donePressed" destination="o5u-SA-X30" eventType="touchUpInside" id="UcJ-8Y-I0J"/>
                                                 </connections>
@@ -167,5 +175,5 @@
             <point key="canvasLocation" x="3648.8000000000002" y="32.833583208395808"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.75932157040000003" green="0.90522080660000004" blue="0.41917598249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
