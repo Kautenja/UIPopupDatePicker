@@ -264,6 +264,7 @@
                     <size key="freeformSize" width="375" height="400"/>
                     <connections>
                         <outlet property="calendar" destination="ROn-Wa-I7p" id="UEg-ir-khk"/>
+                        <outlet property="pickerHeight" destination="JJt-JS-dyN" id="LwK-Ie-JY8"/>
                         <outlet property="timePicker" destination="1nl-7m-r1T" id="Odc-C8-yCz"/>
                     </connections>
                 </viewController>

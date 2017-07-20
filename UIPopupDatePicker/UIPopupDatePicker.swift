@@ -49,6 +49,23 @@ public class UIPopupDatePicker: UIViewController {
         }
     }
 
+    /// a constraint determining if the time picker should be used
+    @IBOutlet weak private var pickerHeight: NSLayoutConstraint!
+    
+    /// A boolean attribute determining whether the time picker is enabled
+    public var isPickerEnabled: Bool {
+        get {
+            return pickerHeight.constant == 61
+        }
+        set {
+            if newValue {
+                pickerHeight.constant = 61
+            } else {
+                pickerHeight.constant = 0
+            }
+        }
+    }
+    
     /// the current date
     public var date: Date {
         set {
