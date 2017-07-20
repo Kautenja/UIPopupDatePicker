@@ -43,7 +43,7 @@ To run the example project, clone the repo, and build it on devices of you choos
 The main entry point for UIPopupDatePicker is the static `show` method.
 
 ```swift
-let _ = UIPopupDatePicker.show(on: self, with: nil block: nil)
+let _ = UIPopupDatePicker.show(on: self, with: nil, block: nil)
 ```
 
 This function returns an instance of UIPopupDatePicker in case you might want to
@@ -52,7 +52,9 @@ manipulate some of the controller manually.
 To respond to a change in the date use the callback handler
 
 ```swift
-let _ = UIPopupDatePicker.show(on: self, with: nil block: nil)
+let _ = UIPopupDatePicker.show(on: self, with: Date()) { (selected) in 
+    NSLog("UIPopupDatePicker returned \(selected) in the callback")
+}
 ```
 
 see [ViewController](PopupDatePicker/ViewController.swift) for a production example of how this might come together
