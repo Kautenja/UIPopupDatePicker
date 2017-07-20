@@ -12,6 +12,7 @@
 		0931EEDC1F1E0B1200CBB815 /* UIPopupDatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0931EEDA1F1E0AF700CBB815 /* UIPopupDatePicker.storyboard */; };
 		0931EEDD1F1E0B1C00CBB815 /* UIPopupDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931EEDB1F1E0AF700CBB815 /* UIPopupDatePicker.swift */; };
 		09496FC71F20E897004939D8 /* MaterialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09496FC61F20E897004939D8 /* MaterialCard.swift */; };
+		098B62191F20F3720007E405 /* paper_texture_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 098B62171F20F28F0007E405 /* paper_texture_02.png */; };
 		09B979A71F1DDE9D00A3A885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979A61F1DDE9D00A3A885 /* AppDelegate.swift */; };
 		09B979A91F1DDE9D00A3A885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979A81F1DDE9D00A3A885 /* ViewController.swift */; };
 		09B979AC1F1DDE9D00A3A885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B979AA1F1DDE9D00A3A885 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		0931EEDA1F1E0AF700CBB815 /* UIPopupDatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPopupDatePicker.storyboard; sourceTree = "<group>"; };
 		0931EEDB1F1E0AF700CBB815 /* UIPopupDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPopupDatePicker.swift; sourceTree = "<group>"; };
 		09496FC61F20E897004939D8 /* MaterialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCard.swift; sourceTree = "<group>"; };
+		098B62171F20F28F0007E405 /* paper_texture_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper_texture_02.png; sourceTree = "<group>"; };
 		09B979A31F1DDE9D00A3A885 /* PopupDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B979A61F1DDE9D00A3A885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09B979A81F1DDE9D00A3A885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				0931EEDA1F1E0AF700CBB815 /* UIPopupDatePicker.storyboard */,
+				098B62171F20F28F0007E405 /* paper_texture_02.png */,
 				0931EEDB1F1E0AF700CBB815 /* UIPopupDatePicker.swift */,
 				09496FC61F20E897004939D8 /* MaterialCard.swift */,
 				09B979F91F1DDF3700A3A885 /* UIPopupDatePicker.h */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0931EEDC1F1E0B1200CBB815 /* UIPopupDatePicker.storyboard in Resources */,
+				098B62191F20F3720007E405 /* paper_texture_02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

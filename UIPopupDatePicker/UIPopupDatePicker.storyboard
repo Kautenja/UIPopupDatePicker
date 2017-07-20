@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Popup Date Picker-->
         <scene sceneID="RvR-R1-GmF">
@@ -21,6 +26,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper_texture_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-Ot-eie">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vou-X0-vcM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                 <subviews>
@@ -29,6 +37,7 @@
                                         <subviews>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNc-7e-weL">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="35"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
                                                 <state key="normal" title="Today">
                                                     <color key="titleColor" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -44,6 +53,11 @@
                                             <constraint firstAttribute="bottom" secondItem="RNc-7e-weL" secondAttribute="bottom" id="Dn9-xG-4MU"/>
                                             <constraint firstItem="RNc-7e-weL" firstAttribute="leading" secondItem="wqE-QB-l4L" secondAttribute="leading" id="buZ-Jw-2Iu"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-TX-gZs" customClass="MaterialCard" customModule="UIPopupDatePicker" customModuleProvider="target">
                                         <rect key="frame" x="10" y="5" width="70" height="35"/>
@@ -51,6 +65,7 @@
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNf-Dm-lO3">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="35"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
                                                 <state key="normal" title="Clear">
                                                     <color key="titleColor" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -67,6 +82,11 @@
                                             <constraint firstAttribute="bottom" secondItem="SNf-Dm-lO3" secondAttribute="bottom" id="dBu-Kz-lPm"/>
                                             <constraint firstItem="SNf-Dm-lO3" firstAttribute="top" secondItem="OKL-TX-gZs" secondAttribute="top" id="uSE-ST-WZQ"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -89,13 +109,13 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
-                                                <color key="value" red="0.16099532929999999" green="0.57374340180000005" blue="0.97680455450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" red="0.75932157040000003" green="0.90522080660000004" blue="0.41917598249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="todaySelectionColor">
-                                                <color key="value" red="0.75932157040000003" green="0.90522080660000004" blue="0.41917598249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
-                                                <color key="value" red="0.75932157040000003" green="0.90522080660000004" blue="0.41917598249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="allowsSelection" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="allowsMultipleSelection" value="NO"/>
@@ -115,7 +135,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="ROn-Wa-I7p" firstAttribute="top" secondItem="nq0-7T-iym" secondAttribute="top" constant="-4" id="8NM-Bw-3kE"/>
                                     <constraint firstAttribute="height" constant="244" id="CY0-bU-U7M"/>
@@ -128,18 +148,18 @@
                                 <rect key="frame" x="0.0" y="289" width="375" height="61"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="1nl-7m-r1T">
-                                        <rect key="frame" x="0.0" y="-10" width="375" height="81"/>
+                                        <rect key="frame" x="20" y="-10" width="335" height="81"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <date key="date" timeIntervalSinceReferenceDate="503715657.78058201">
                                             <!--2016-12-18 01:00:57 +0000-->
                                         </date>
                                     </datePicker>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="1nl-7m-r1T" firstAttribute="leading" secondItem="ixu-3p-crS" secondAttribute="leading" id="6yJ-yp-PJN"/>
+                                    <constraint firstItem="1nl-7m-r1T" firstAttribute="leading" secondItem="ixu-3p-crS" secondAttribute="leading" constant="20" id="6yJ-yp-PJN"/>
                                     <constraint firstAttribute="height" constant="61" id="JJt-JS-dyN"/>
-                                    <constraint firstAttribute="trailing" secondItem="1nl-7m-r1T" secondAttribute="trailing" id="Sbo-cl-ORv"/>
+                                    <constraint firstAttribute="trailing" secondItem="1nl-7m-r1T" secondAttribute="trailing" constant="20" id="Sbo-cl-ORv"/>
                                     <constraint firstItem="1nl-7m-r1T" firstAttribute="top" secondItem="ixu-3p-crS" secondAttribute="top" constant="-10" id="tvD-lu-jjl"/>
                                     <constraint firstAttribute="bottom" secondItem="1nl-7m-r1T" secondAttribute="bottom" constant="-10" id="wrD-od-7Sd"/>
                                 </constraints>
@@ -152,6 +172,7 @@
                                         <subviews>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AG-HR-ta5">
                                                 <rect key="frame" x="0.0" y="0.0" width="172.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -167,12 +188,18 @@
                                             <constraint firstItem="5AG-HR-ta5" firstAttribute="leading" secondItem="xFY-0U-gbM" secondAttribute="leading" id="XYn-9X-7U2"/>
                                             <constraint firstAttribute="trailing" secondItem="5AG-HR-ta5" secondAttribute="trailing" id="alW-LJ-Nm2"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbN-gp-KsB" customClass="MaterialCard" customModule="UIPopupDatePicker" customModuleProvider="target">
                                         <rect key="frame" x="192.5" y="5" width="172.5" height="40"/>
                                         <subviews>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7S-aw-nQ0">
                                                 <rect key="frame" x="0.0" y="0.0" width="172.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Done">
                                                     <color key="titleColor" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -188,6 +215,11 @@
                                             <constraint firstAttribute="trailing" secondItem="Y7S-aw-nQ0" secondAttribute="trailing" id="bob-cF-0Hn"/>
                                             <constraint firstItem="Y7S-aw-nQ0" firstAttribute="top" secondItem="xbN-gp-KsB" secondAttribute="top" id="opa-4K-MOC"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -215,9 +247,13 @@
                             <constraint firstItem="vou-X0-vcM" firstAttribute="top" secondItem="8Ap-b6-JCg" secondAttribute="bottom" id="U1Y-Kc-Yel"/>
                             <constraint firstItem="ixu-3p-crS" firstAttribute="top" secondItem="nq0-7T-iym" secondAttribute="bottom" id="VsB-nM-jCv"/>
                             <constraint firstAttribute="trailing" secondItem="b2i-9o-uaz" secondAttribute="trailing" id="YP5-3P-xpt"/>
+                            <constraint firstItem="TQe-iu-4rX" firstAttribute="top" secondItem="mIV-Ot-eie" secondAttribute="bottom" id="bwR-26-YjO"/>
                             <constraint firstItem="TQe-iu-4rX" firstAttribute="top" secondItem="b2i-9o-uaz" secondAttribute="bottom" id="eFn-r5-8Ld"/>
+                            <constraint firstAttribute="trailing" secondItem="mIV-Ot-eie" secondAttribute="trailing" id="f2g-q2-cOg"/>
                             <constraint firstAttribute="trailing" secondItem="nq0-7T-iym" secondAttribute="trailing" id="kIr-bc-dUu"/>
                             <constraint firstItem="ixu-3p-crS" firstAttribute="leading" secondItem="1f2-pG-bRg" secondAttribute="leading" id="lhE-4V-xYA"/>
+                            <constraint firstItem="mIV-Ot-eie" firstAttribute="top" secondItem="8Ap-b6-JCg" secondAttribute="bottom" id="pel-yd-UgJ"/>
+                            <constraint firstItem="mIV-Ot-eie" firstAttribute="leading" secondItem="1f2-pG-bRg" secondAttribute="leading" id="uXk-jv-a3W"/>
                             <constraint firstAttribute="trailing" secondItem="ixu-3p-crS" secondAttribute="trailing" id="xdM-kG-dYQ"/>
                         </constraints>
                     </view>
@@ -236,5 +272,8 @@
             <point key="canvasLocation" x="3648.8000000000002" y="27.886056971514247"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.28809207679999999" green="0.59404689070000005" blue="0.9456029534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="paper_texture_02.png" width="1600" height="1200"/>
+    </resources>
+    <color key="tintColor" red="0.15750545260000001" green="0.67963606119999997" blue="0.97627097370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
