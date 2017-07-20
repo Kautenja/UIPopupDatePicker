@@ -37,7 +37,17 @@ public class UIPopupDatePicker: UIViewController {
     @IBOutlet var calendar: FSCalendar!
     
     /// the time selection agent
-    @IBOutlet var timePicker: UIDatePicker!
+    @IBOutlet var timePicker: UIDatePicker! {
+        didSet {
+            // try to make the two ugly lines invisible on the picker view
+            if timePicker.subviews.count >= 1 {
+                if timePicker.subviews[0].subviews.count >= 2 {
+                    timePicker.subviews[0].subviews[1].isHidden = true
+                    timePicker.subviews[0].subviews[2].isHidden = true
+                }
+            }
+        }
+    }
 
     /// the current date
     public var date: Date {
