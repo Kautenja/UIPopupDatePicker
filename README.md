@@ -8,7 +8,13 @@
 
 ## Screenshots
 
+### With Time Picker
 
+<img src="https://user-images.githubusercontent.com/2184469/28429001-cf56a958-6d40-11e7-86f7-aeb86693bb4d.PNG" width = 300>
+
+### Without Time Picker
+
+<img src="https://user-images.githubusercontent.com/2184469/28429000-ce02e79c-6d40-11e7-9775-c37001308080.PNG" width = 300>
 
 ## Requirements
 
