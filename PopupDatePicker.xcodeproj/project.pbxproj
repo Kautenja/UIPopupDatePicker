@@ -13,6 +13,7 @@
 		0931EEDD1F1E0B1C00CBB815 /* UIPopupDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931EEDB1F1E0AF700CBB815 /* UIPopupDatePicker.swift */; };
 		09496FC71F20E897004939D8 /* MaterialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09496FC61F20E897004939D8 /* MaterialCard.swift */; };
 		098B62191F20F3720007E405 /* paper_texture_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 098B62171F20F28F0007E405 /* paper_texture_02.png */; };
+		098B621A1F20FA5E0007E405 /* paper_texture_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 098B62171F20F28F0007E405 /* paper_texture_02.png */; };
 		09B979A71F1DDE9D00A3A885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979A61F1DDE9D00A3A885 /* AppDelegate.swift */; };
 		09B979A91F1DDE9D00A3A885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979A81F1DDE9D00A3A885 /* ViewController.swift */; };
 		09B979AC1F1DDE9D00A3A885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B979AA1F1DDE9D00A3A885 /* Main.storyboard */; };
@@ -255,6 +256,7 @@
 				09B979B11F1DDE9D00A3A885 /* LaunchScreen.storyboard in Resources */,
 				09B979AE1F1DDE9D00A3A885 /* Assets.xcassets in Resources */,
 				09B979AC1F1DDE9D00A3A885 /* Main.storyboard in Resources */,
+				098B621A1F20FA5E0007E405 /* paper_texture_02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -120,7 +120,7 @@ public class UIPopupDatePicker: UIViewController {
     ///   - block: the function to handle completion
     public class func show(on viewController: UIViewController,
                            with date: Date?=nil,
-                           block handler: ((Date?)->Void)?=nil) -> UIPopupDatePicker {
+                           block handler: @escaping ((Date?)->Void)) -> UIPopupDatePicker {
         // load the view from the storyboard
         let name = String(describing: classForCoder())
         let bundle = Bundle(for: UIPopupDatePicker.self)

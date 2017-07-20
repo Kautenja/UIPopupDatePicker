@@ -7,7 +7,7 @@
 //
 
 /// This class models a Material design card with a background shadow
-@IBDesignable open class MaterialCard: UIView {
+@IBDesignable class MaterialCard: UIView {
     
     /// the radius for the corners of the card
     @IBInspectable public var cornerRadius: CGFloat {
