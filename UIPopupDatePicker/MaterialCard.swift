@@ -6,6 +6,8 @@
 //  Copyright © 2017 CK Software. All rights reserved.
 //
 
+import UIKit
+
 /// This class models a Material design card with a background shadow
 @IBDesignable class MaterialCard: UIView {
     
