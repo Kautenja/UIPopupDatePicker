@@ -1,9 +1,12 @@
 # UIPopupDatePicker
 
 [![swift-badge][]][swift-link]
+[![carthage-badge][]][carthage-link]
 
 [swift-badge]: https://img.shields.io/badge/swift-4.0-orange.svg
 [swift-link]: https://swift.org/
+[carthage-badge]: https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat
+[carthage-link]: https://github.com/Carthage/Carthage
 
 
 ## Screenshots
