@@ -2,7 +2,7 @@
   "commitish" : "0.5.4",
   "iOS" : [
     {
-      "hash" : "e3db37f241d8ed3ced801a077db1f85c256bcd4008dcc519fdc35ef159d208d7",
+      "hash" : "857d4ad38a5a6cb90f444b626875227dc5c934dc067c1d50c5c92819e1b86ae0",
       "name" : "PopupDialog"
     }
   ]

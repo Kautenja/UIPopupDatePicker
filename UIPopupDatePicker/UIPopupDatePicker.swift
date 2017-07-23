@@ -34,7 +34,13 @@ public class UIPopupDatePicker: UIViewController {
     var popup: PopupDialog!
     
     /// the day selection agent
-    @IBOutlet var calendar: FSCalendar!
+    @IBOutlet var calendar: FSCalendar! {
+        didSet {
+            let hvnl = "HelveticaNeue-Light"
+            calendar.appearance.headerTitleFont = UIFont(name: hvnl, size: 12.0)!
+            calendar.appearance.weekdayFont = UIFont(name: hvnl, size: 18.0)!
+        }
+    }
     
     /// the time selection agent
     @IBOutlet var timePicker: UIDatePicker! {
@@ -83,9 +89,6 @@ public class UIPopupDatePicker: UIViewController {
     /// Setup the view after it's loaded into memory
     override public func viewDidLoad() {
         super.viewDidLoad()
-        let hvnl = "HelveticaNeue-Light"
-        calendar.appearance.headerTitleFont = UIFont(name: hvnl, size: 12.0)!
-        calendar.appearance.weekdayFont = UIFont(name: hvnl, size: 18.0)!
         todayPressed()
     }
     
