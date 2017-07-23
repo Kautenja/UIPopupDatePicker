@@ -30,7 +30,7 @@ This framework relies on (and installs):
 Add the following to your Cartfile
 
 ```ruby
-github "kautenja/UIPopupDatePicker" ~> 1.0
+github "kautenja/UIPopupDatePicker" ~> 1.1
 ```
 
 ## Example
