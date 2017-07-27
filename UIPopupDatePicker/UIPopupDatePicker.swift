@@ -15,7 +15,7 @@ import FSCalendar
 /// - parameters:
 ///   - date: the date to get the day month year from
 ///   - time: the date to get the hours minutes seconds from
-func combine(date: Date, time: Date) -> Date {
+func combine(_ date: Date, time: Date) -> Date {
     let cal = Calendar.current
     var dateComponents = cal.dateComponents([.day, .month, .year], from: date)
     let timeComponents = cal.dateComponents([.hour, .minute], from: time)
@@ -28,7 +28,7 @@ func combine(date: Date, time: Date) -> Date {
 }
 
 /// A class to select a date a time with prettier UI
-public class UIPopupDatePicker: UIViewController {
+open class UIPopupDatePicker: UIViewController {
     
     /// the popup that this picker is contained in
     var popup: PopupDialog!
@@ -56,10 +56,10 @@ public class UIPopupDatePicker: UIViewController {
     }
 
     /// a constraint determining if the time picker should be used
-    @IBOutlet weak private var pickerHeight: NSLayoutConstraint!
+    @IBOutlet weak fileprivate var pickerHeight: NSLayoutConstraint!
     
     /// A boolean attribute determining whether the time picker is enabled
-    public var isPickerEnabled: Bool {
+    open var isPickerEnabled: Bool {
         get {
             return pickerHeight.constant == 61
         }
@@ -73,13 +73,13 @@ public class UIPopupDatePicker: UIViewController {
     }
     
     /// the current date
-    public var date: Date {
+    open var date: Date {
         set {
             calendar.select(newValue)
             timePicker.setDate(newValue, animated: true)
         }
         get {
-            return combine(date: calendar.selectedDate!, time: timePicker.date)
+            return combine(calendar.selectedDate!, time: timePicker.date)
         }
     }
     
@@ -87,7 +87,7 @@ public class UIPopupDatePicker: UIViewController {
     var handler: ((Date?)->Void)?
     
     /// Setup the view after it's loaded into memory
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         todayPressed()
     }
@@ -121,7 +121,7 @@ public class UIPopupDatePicker: UIViewController {
     ///   - viewController: the view controller to present on top of
     ///   - date: the date to display
     ///   - block: the function to handle completion
-    public class func show(on viewController: UIViewController,
+    open class func show(on viewController: UIViewController,
                            with date: Date?=nil,
                            block handler: @escaping ((Date?)->Void)) -> UIPopupDatePicker {
         // load the view from the storyboard

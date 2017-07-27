@@ -16,12 +16,12 @@
 		098B621A1F20FA5E0007E405 /* paper_texture_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 098B62171F20F28F0007E405 /* paper_texture_02.png */; };
 		09B979A71F1DDE9D00A3A885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979A61F1DDE9D00A3A885 /* AppDelegate.swift */; };
 		09B979A91F1DDE9D00A3A885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B979A81F1DDE9D00A3A885 /* ViewController.swift */; };
-		09B979AC1F1DDE9D00A3A885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B979AA1F1DDE9D00A3A885 /* Main.storyboard */; };
 		09B979AE1F1DDE9D00A3A885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09B979AD1F1DDE9D00A3A885 /* Assets.xcassets */; };
-		09B979B11F1DDE9D00A3A885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B979AF1F1DDE9D00A3A885 /* LaunchScreen.storyboard */; };
 		09B979FB1F1DDF3700A3A885 /* UIPopupDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B979F91F1DDF3700A3A885 /* UIPopupDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09B979FE1F1DDF3700A3A885 /* UIPopupDatePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B979F71F1DDF3700A3A885 /* UIPopupDatePicker.framework */; };
 		09B979FF1F1DDF3700A3A885 /* UIPopupDatePicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09B979F71F1DDF3700A3A885 /* UIPopupDatePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09D5B7D91F2A0DDD009ECEF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D5B7D81F2A0DDD009ECEF4 /* Main.storyboard */; };
+		09D5B7DB1F2A0DED009ECEF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D5B7DA1F2A0DED009ECEF4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,7 @@
 		09B979A31F1DDE9D00A3A885 /* PopupDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B979A61F1DDE9D00A3A885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09B979A81F1DDE9D00A3A885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		09B979AB1F1DDE9D00A3A885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09B979AD1F1DDE9D00A3A885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		09B979B01F1DDE9D00A3A885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09B979B21F1DDE9D00A3A885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09B979BB1F1DDE9D00A3A885 /* PopupDatePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDatePickerUITests.swift; sourceTree = "<group>"; };
 		09B979BD1F1DDE9D00A3A885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +66,8 @@
 		09B979F91F1DDF3700A3A885 /* UIPopupDatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIPopupDatePicker.h; sourceTree = "<group>"; };
 		09B979FA1F1DDF3700A3A885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09B97A241F1DE22500A3A885 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09D5B7D81F2A0DDD009ECEF4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		09D5B7DA1F2A0DED009ECEF4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +116,9 @@
 			children = (
 				09B979A61F1DDE9D00A3A885 /* AppDelegate.swift */,
 				09B979A81F1DDE9D00A3A885 /* ViewController.swift */,
-				09B979AA1F1DDE9D00A3A885 /* Main.storyboard */,
+				09D5B7D81F2A0DDD009ECEF4 /* Main.storyboard */,
 				09B979AD1F1DDE9D00A3A885 /* Assets.xcassets */,
-				09B979AF1F1DDE9D00A3A885 /* LaunchScreen.storyboard */,
+				09D5B7DA1F2A0DED009ECEF4 /* LaunchScreen.storyboard */,
 				09B979B21F1DDE9D00A3A885 /* Info.plist */,
 			);
 			path = PopupDatePicker;
@@ -221,10 +221,11 @@
 				TargetAttributes = {
 					09B979A21F1DDE9D00A3A885 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0830;
 					};
 					09B979F61F1DDF3700A3A885 = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -253,9 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09B979B11F1DDE9D00A3A885 /* LaunchScreen.storyboard in Resources */,
+				09D5B7D91F2A0DDD009ECEF4 /* Main.storyboard in Resources */,
+				09D5B7DB1F2A0DED009ECEF4 /* LaunchScreen.storyboard in Resources */,
 				09B979AE1F1DDE9D00A3A885 /* Assets.xcassets in Resources */,
-				09B979AC1F1DDE9D00A3A885 /* Main.storyboard in Resources */,
 				098B621A1F20FA5E0007E405 /* paper_texture_02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,25 +334,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		09B979AA1F1DDE9D00A3A885 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09B979AB1F1DDE9D00A3A885 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		09B979AF1F1DDE9D00A3A885 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09B979B01F1DDE9D00A3A885 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		09B979BE1F1DDE9D00A3A885 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -407,6 +389,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -456,6 +439,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -475,7 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cksoftware.popupdatepicker.PopupDatePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -495,7 +479,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cksoftware.popupdatepicker.PopupDatePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -526,7 +510,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -558,7 +542,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

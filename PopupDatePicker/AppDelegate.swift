@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 @IBDesignable class MaterialCard: UIView {
     
     /// the radius for the corners of the card
-    @IBInspectable public var cornerRadius: CGFloat {
+    @IBInspectable open var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -77,7 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     /// Perform global initialization between init functions
-    private func setup() {
+    fileprivate func setup() {
         layer.cornerRadius = 4
         layer.masksToBounds = true
         clipsToBounds = true

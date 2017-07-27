@@ -7,5 +7,4 @@ framework module PopupDialog {
 
 module PopupDialog.Swift {
     header "PopupDialog-Swift.h"
-    requires objc
 }
