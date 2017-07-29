@@ -43,22 +43,52 @@ To run the example project, clone the repo, and build it on devices of you choos
 
 ### Code Usage
 
+#### Creation
+
 The main entry point for UIPopupDatePicker is the static `show` method.
 
 ```swift
-let _ = UIPopupDatePicker.show(on: self, with: nil, block: nil)
+_ = UIPopupDatePicker.show(on: self, with: nil, block: nil)
 ```
 
-This function returns an instance of UIPopupDatePicker in case you might want to
-manipulate some of the controller manually.
+#### Customization
 
-To respond to a change in the date use the callback handler
+This function returns an instance of UIPopupDatePicker in case you might want to
+manipulate some of the controller manually:
 
 ```swift
-let _ = UIPopupDatePicker.show(on: self, with: Date()) { (selected) in 
+let popup = UIPopupDatePicker.show(on: self, with: nil, block: nil)
+popup.headerText = "Some text you might want as a title!"
+```
+
+#### Callback
+
+To respond to a change in the date use the callback handler:
+
+```swift
+_ = UIPopupDatePicker.show(on: self, with: Date()) { (selected) in
     NSLog("UIPopupDatePicker returned \(selected) in the callback")
 }
 ```
+
+the parameter passed to the anonymous function an optional date (`Date?`). If the user:
+
+1. presses done
+
+the callback will be executed with the date from the calendar and time from the picker. If
+the time picker is hidden, the time will be the time that the popup was first created.
+
+2. presses clear
+
+the callback will be executed passing `nil` as the parameter to the anonymous function.
+Use this to remove a date from something.
+
+3. presses cancel
+
+the callback **IS NOT** executed and the popup dismisses with no changes to the parent
+view controller.
+
+### Code Samples
 
 see [ViewController](PopupDatePicker/ViewController.swift) for a production example of how this might come together
 
@@ -70,4 +100,7 @@ Kautenja, kautencreations@gmail.com
 
 ## License
 
-UIPopupDatePicker is available under the MIT license. See the [LICENSE](./LICSENSE) file for more info.
+**TL;DR** do what you want with it.
+
+UIPopupDatePicker is available under the MIT license. See the [LICENSE](./LICSENSE) file
+for more info.

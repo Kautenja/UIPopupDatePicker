@@ -33,6 +33,32 @@ public class UIPopupDatePicker: UIViewController {
     /// the popup that this picker is contained in
     var popup: PopupDialog!
     
+    /// Handle a press to the clear button
+    @IBAction func clearPressed() {
+        if let completion = handler {
+            completion(nil)
+        }
+        popup.dismiss(animated: true, completion: nil)
+    }
+    
+    /// the header label
+    @IBOutlet weak var header: UILabel!
+    
+    /// the text on the header label
+    public var headerText: String? {
+        get {
+            return header.text
+        }
+        set {
+            header.text = newValue
+        }
+    }
+    
+    /// Handle a press to the 'today' button
+    @IBAction func todayPressed() {
+        date = Date()
+    }
+    
     /// the day selection agent
     @IBOutlet var calendar: FSCalendar! {
         didSet {
@@ -83,6 +109,17 @@ public class UIPopupDatePicker: UIViewController {
         }
     }
     
+    /// Dismiss the view controller with no changes made
+    @IBAction func cancelPressed() {
+        popup.dismiss(animated: true, completion: nil)
+    }
+    
+    /// Handle a press to the done button
+    @IBAction func donePressed() {
+        popup.dismiss(animated: true, completion: nil)
+        handler?(date)
+    }
+    
     /// Handles 'saving'
     var handler: ((Date?)->Void)?
     
@@ -90,30 +127,6 @@ public class UIPopupDatePicker: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         todayPressed()
-    }
-    
-    /// Dismiss the view controller with no changes made
-    @IBAction func cancelPressed() {
-        popup.dismiss(animated: true, completion: nil)
-    }
-    
-    /// Handle a press to the clear button
-    @IBAction func clearPressed() {
-        if let completion = handler {
-            completion(nil)
-        }
-        popup.dismiss(animated: true, completion: nil)
-    }
-    
-    /// Handle a press to the 'today' button
-    @IBAction func todayPressed() {
-        date = Date()
-    }
-    
-    /// Handle a press to the done button
-    @IBAction func donePressed() {
-        popup.dismiss(animated: true, completion: nil)
-        handler?(date)
     }
     
     /// Display a new date picker on top of an existing view controller

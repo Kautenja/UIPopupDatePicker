@@ -6,10 +6,14 @@
 //  Copyright © 2017 CK Software. All rights reserved.
 //
 
+// import the framework first!
 import UIPopupDatePicker
 
 /// Main view controller for the example app
 class ViewController: UIViewController {
+    
+    /// label for displaying the currently selected date
+    @IBOutlet var dateLabel: UILabel!
     
     /// the selected date
     var date: Date? {
@@ -24,25 +28,26 @@ class ViewController: UIViewController {
             self.dateLabel.text = format.string(from: _date)
         }
     }
-    
-    /// label for displaying the currently selected date
-    @IBOutlet var dateLabel: UILabel!
 
     /// Called when a user presses the button on this view to select a date
     /// with a time
     @IBAction func selectWithTimePressed() {
-        let _ = UIPopupDatePicker.show(on: self, with: date) { (selected) in
+        // display a date popup in default configuration
+        let popup = UIPopupDatePicker.show(on: self, with: date) { (selected) in
             self.date = selected
         }
+        popup.headerText = "Picker with time"
     }
     
     /// Called when a user presses the button on this view to select a date
     /// without a time
     @IBAction func selectWithoutTimePressed() {
-        let picker = UIPopupDatePicker.show(on: self, with: date) { (selected) in
+        // display a date popup without the time picker
+        let popup = UIPopupDatePicker.show(on: self, with: date) { (selected) in
             self.date = selected
         }
-        picker.isPickerEnabled = false
+        popup.isPickerEnabled = false
+        popup.headerText = "Picker without time"
     }
     
 }
