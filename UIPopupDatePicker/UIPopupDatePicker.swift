@@ -56,7 +56,7 @@ public class UIPopupDatePicker: UIViewController {
     
     /// Handle a press to the 'today' button
     @IBAction func todayPressed() {
-        date = Date()
+        date = .today5min
     }
     
     /// the day selection agent
@@ -148,7 +148,7 @@ public class UIPopupDatePicker: UIViewController {
         picker.popup = popup
         picker.handler = handler
         if let _date = date {
-            picker.date = _date
+            picker.date = _date.roundedAbout5Min
         }
         // present the view controller
         viewController.present(popup, animated: true, completion: nil)
